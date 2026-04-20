@@ -11,6 +11,112 @@
   --dark-bg: #0f172a;
 }
 
+/* --- Keyframe Animations --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* --- Animation Classes --- */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.animated {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.slide-in-left {
+  opacity: 0;
+}
+
+.slide-in-left.animated {
+  animation: slideInLeft 0.6s ease forwards;
+}
+
+.slide-in-right {
+  opacity: 0;
+}
+
+.slide-in-right.animated {
+  animation: slideInRight 0.6s ease forwards;
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.fade-in.animated {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.scale-in {
+  opacity: 0;
+}
+
+.scale-in.animated {
+  animation: scaleIn 0.5s ease forwards;
+}
+
 /* --- Base --- */
 html {
   scroll-behavior: smooth;
@@ -46,6 +152,19 @@ body {
 #mainNav .navbar-brand {
   color: var(--accent);
   font-size: 1.25rem;
+  transition: transform 0.2s ease;
+}
+
+#mainNav .navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+#mainNav .navbar-brand .bi {
+  transition: transform 0.3s ease;
+}
+
+#mainNav .navbar-brand:hover .bi {
+  transform: rotate(20deg);
 }
 
 #mainNav .nav-link {
@@ -84,13 +203,22 @@ body {
 
 .hero-section .btn-light:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), 0 0 20px rgba(37, 99, 235, 0.3);
+}
+
+.hero-section .btn-light .bi {
+  transition: transform 0.3s ease;
+}
+
+.hero-section .btn-light:hover .bi {
+  transform: translateX(4px);
 }
 
 .hero-icon {
   font-size: 12rem;
   opacity: 0.2;
   line-height: 1;
+  animation: pulse 4s ease-in-out infinite;
 }
 
 /* --- Service Cards --- */
@@ -114,6 +242,12 @@ body {
   background: rgba(37, 99, 235, 0.1);
   color: var(--accent);
   font-size: 1.5rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1) rotate(5deg);
+  background: rgba(37, 99, 235, 0.15);
 }
 
 /* --- About --- */
@@ -122,6 +256,14 @@ body {
   min-height: 360px;
   background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent-dark) 100%);
   border-radius: 1rem;
+}
+
+.about-image-placeholder .bi {
+  transition: transform 0.3s ease;
+}
+
+.about-image-placeholder:hover .bi {
+  transform: scale(1.1) rotate(10deg);
 }
 
 /* --- Contact --- */
@@ -141,15 +283,27 @@ body {
   transform: translateY(-2px);
 }
 
+/* Contact info icon animations */
+#contact .bi {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#contact .d-flex:hover .bi {
+  transform: scale(1.15);
+  color: var(--accent-dark) !important;
+}
+
 #contactForm .form-control {
   border-radius: 0.6rem;
   border: 1px solid #e2e8f0;
   padding: 0.75rem 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 #contactForm .form-control:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.15);
+  transform: translateY(-1px);
 }
 
 /* --- Footer --- */
@@ -170,13 +324,14 @@ body {
   color: #94a3b8;
   font-size: 1.1rem;
   margin: 0 0.35rem;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
 }
 
 .footer-social:hover {
   background: var(--accent);
   color: #fff;
+  transform: translateY(-4px) scale(1.1);
 }
 
 /* --- Responsive Tweaks --- */
