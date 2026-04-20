@@ -173,4 +173,23 @@
   document.querySelectorAll('.d-flex.gap-4 > div').forEach(function(stat) {
     statsObserver.observe(stat);
   });
+
+  // --- Sectors Carousel Auto-play ---
+  const sectorsCarousel = document.getElementById('sectorsCarousel');
+  if (sectorsCarousel) {
+    const carousel = new bootstrap.Carousel(sectorsCarousel, {
+      interval: 5000,
+      wrap: true,
+      keyboard: true
+    });
+
+    // Pause on hover
+    sectorsCarousel.addEventListener('mouseenter', function() {
+      carousel.pause();
+    });
+
+    sectorsCarousel.addEventListener('mouseleave', function() {
+      carousel.cycle();
+    });
+  }
 })();

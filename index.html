@@ -40,28 +40,37 @@
                 <div class="col-4">
                   <ul class="list-unstyled mb-0">
                     <li><a class="dropdown-item" href="#sectors">Agriculture</a></li>
-                    <li><a class="dropdown-item" href="#sectors">Contractors & Building Services</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Aviation</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Contractors & Building</a></li>
                     <li><a class="dropdown-item" href="#sectors">Construction</a></li>
                     <li><a class="dropdown-item" href="#sectors">Data Centres</a></li>
                     <li><a class="dropdown-item" href="#sectors">Education</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Events</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Government</a></li>
                   </ul>
                 </div>
                 <div class="col-4">
                   <ul class="list-unstyled mb-0">
-                    <li><a class="dropdown-item" href="#sectors">Government</a></li>
                     <li><a class="dropdown-item" href="#sectors">Healthcare</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Hospitality</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Logistics</a></li>
                     <li><a class="dropdown-item" href="#sectors">Manufacturing</a></li>
                     <li><a class="dropdown-item" href="#sectors">Mining</a></li>
                     <li><a class="dropdown-item" href="#sectors">Oil and Gas</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Petrochemical</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Pharmaceuticals</a></li>
                   </ul>
                 </div>
                 <div class="col-4">
                   <ul class="list-unstyled mb-0">
                     <li><a class="dropdown-item" href="#sectors">Renewable Energy</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Retail</a></li>
                     <li><a class="dropdown-item" href="#sectors">Shipping</a></li>
                     <li><a class="dropdown-item" href="#sectors">Telecommunications</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Transport</a></li>
                     <li><a class="dropdown-item" href="#sectors">Utilities</a></li>
                     <li><a class="dropdown-item" href="#sectors">Warehouse & Distribution</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Water & Wastewater</a></li>
                   </ul>
                 </div>
               </div>
@@ -168,79 +177,180 @@
           ensuring safe, reliable, and compliant power systems.
         </p>
       </div>
-      <div class="row g-3">
-        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.05s;">
-          <div class="sector-card text-center p-3">
-            <i class="bi bi-tree-fill sector-icon"></i>
-            <h6 class="mt-2 mb-0">Agriculture</h6>
+      <!-- Sectors Carousel -->
+      <div id="sectorsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#sectorsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#sectorsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-3">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-tree-fill sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Agriculture</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-tools sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Contractors & Building</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-building sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Construction</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-hdd-rack sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Data Centres</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-book-fill sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Education</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-calendar-event sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Events</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-bank sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Government</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-hospital sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Healthcare</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-gear-fill sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Manufacturing</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-minecart sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Mining</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-droplet-fill sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Oil and Gas</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-capsule sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Pharmaceuticals</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-3">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-circle-fill sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Petrochemical</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-sun-fill sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Renewable Energy</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-bezier sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Shipping</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-broadcast sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Telecommunications</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-lightning-fill sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Utilities</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-box-seam-fill sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Warehouse & Distribution</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-shop-window sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Retail</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-cup-hot-fill sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Hospitality</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-bus-front sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Transport</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-airplane-fill sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Aviation</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-moisture sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Water & Wastewater</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="sector-card text-center p-3">
+                  <i class="bi bi-truck-front-fill sector-icon"></i>
+                  <h6 class="mt-2 mb-0">Logistics</h6>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.1s;">
-          <div class="sector-card text-center p-3">
-            <i class="bi bi-building sector-icon"></i>
-            <h6 class="mt-2 mb-0">Construction</h6>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.15s;">
-          <div class="sector-card text-center p-3">
-            <i class="bi bi-hospital sector-icon"></i>
-            <h6 class="mt-2 mb-0">Healthcare</h6>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.2s;">
-          <div class="sector-card text-center p-3">
-            <i class="bi bi-gear-fill sector-icon"></i>
-            <h6 class="mt-2 mb-0">Manufacturing</h6>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.25s;">
-          <div class="sector-card text-center p-3">
-            <i class="bi bi-minecart sector-icon"></i>
-            <h6 class="mt-2 mb-0">Mining</h6>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.3s;">
-          <div class="sector-card text-center p-3">
-            <i class="bi bi-droplet-fill sector-icon"></i>
-            <h6 class="mt-2 mb-0">Oil and Gas</h6>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.35s;">
-          <div class="sector-card text-center p-3">
-            <i class="bi bi-sun-fill sector-icon"></i>
-            <h6 class="mt-2 mb-0">Renewable Energy</h6>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.4s;">
-          <div class="sector-card text-center p-3">
-            <i class="bi bi-broadcast-pin sector-icon"></i>
-            <h6 class="mt-2 mb-0">Telecommunications</h6>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.45s;">
-          <div class="sector-card text-center p-3">
-            <i class="bi bi-lightning-charge-fill sector-icon"></i>
-            <h6 class="mt-2 mb-0">Utilities</h6>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.5s;">
-          <div class="sector-card text-center p-3">
-            <i class="bi bi-hdd-rack sector-icon"></i>
-            <h6 class="mt-2 mb-0">Data Centres</h6>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.55s;">
-          <div class="sector-card text-center p-3">
-            <i class="bi bi-book-fill sector-icon"></i>
-            <h6 class="mt-2 mb-0">Education</h6>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.6s;">
-          <div class="sector-card text-center p-3">
-            <i class="bi bi-box-seam sector-icon"></i>
-            <h6 class="mt-2 mb-0">Warehouse</h6>
-          </div>
-        </div>
+        
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#sectorsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#sectorsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </section>

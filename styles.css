@@ -183,7 +183,7 @@ body {
 
 /* --- Sectors Dropdown Menu --- */
 .dropdown-menu-sectors {
-  min-width: 750px;
+  min-width: 800px;
   max-width: 90vw;
   border: none;
   border-radius: 1rem;
@@ -351,6 +351,11 @@ body {
   border: 1px solid #e2e8f0;
   transition: all 0.3s ease;
   cursor: pointer;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .sector-card:hover {
@@ -360,9 +365,12 @@ body {
 }
 
 .sector-icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--accent);
   transition: transform 0.3s ease, color 0.3s ease;
+  display: block;
+  height: 2.5rem;
+  line-height: 1;
 }
 
 .sector-card:hover .sector-icon {
@@ -375,10 +383,107 @@ body {
   font-weight: 600;
   color: #334155;
   transition: color 0.3s ease;
+  margin-top: 0.75rem !important;
 }
 
 .sector-card:hover h6 {
   color: var(--accent);
+}
+
+/* Sectors Carousel Styling */
+#sectorsCarousel {
+  position: relative;
+  padding: 0 4rem 3rem 4rem;
+}
+
+#sectorsCarousel .carousel-inner {
+  padding: 1rem 0;
+}
+
+#sectorsCarousel .carousel-control-prev,
+#sectorsCarousel .carousel-control-next {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: var(--accent);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+#sectorsCarousel .carousel-control-prev {
+  left: 0;
+}
+
+#sectorsCarousel .carousel-control-next {
+  right: 0;
+}
+
+#sectorsCarousel .carousel-control-prev:hover,
+#sectorsCarousel .carousel-control-next:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+#sectorsCarousel .carousel-control-prev-icon,
+#sectorsCarousel .carousel-control-next-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#sectorsCarousel .carousel-indicators {
+  margin-bottom: 0;
+  position: static;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#sectorsCarousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  opacity: 0.3;
+  border: none;
+  transition: all 0.3s ease;
+  margin: 0 6px;
+}
+
+#sectorsCarousel .carousel-indicators button.active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+#sectorsCarousel .carousel-item {
+  transition: transform 0.6s ease;
+}
+
+#sectorsCarousel .row {
+  margin: 0;
+}
+
+#sectorsCarousel .row > * {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  #sectorsCarousel {
+    padding: 0 2.5rem 3rem 2.5rem;
+  }
+  
+  #sectorsCarousel .carousel-control-prev,
+  #sectorsCarousel .carousel-control-next {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  #sectorsCarousel .row > * {
+    margin-bottom: 0.75rem;
+  }
 }
 
 /* --- About --- */
