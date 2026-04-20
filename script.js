@@ -58,7 +58,7 @@
     const message = document.getElementById("message").value;
 
     // Build mailto link
-    const to = "info@powerdiagnostics.com";
+    const to = "info@power-diagnostics.com";
     const subject = encodeURIComponent(`Contact Form Submission from ${name}`);
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
