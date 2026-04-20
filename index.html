@@ -31,6 +31,42 @@
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto gap-lg-1">
           <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="sectorsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sectors
+            </a>
+            <div class="dropdown-menu dropdown-menu-sectors p-4" aria-labelledby="sectorsDropdown">
+              <div class="row g-3">
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="#sectors">Agriculture</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Contractors & Building Services</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Construction</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Data Centres</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Education</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="#sectors">Government</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Healthcare</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Manufacturing</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Mining</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Oil and Gas</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="#sectors">Renewable Energy</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Shipping</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Telecommunications</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Utilities</a></li>
+                    <li><a class="dropdown-item" href="#sectors">Warehouse & Distribution</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -122,8 +158,95 @@
     </div>
   </section>
 
+  <!-- ===== Sectors Section ===== -->
+  <section id="sectors" class="section-padding bg-light">
+    <div class="container">
+      <div class="text-center mb-5 animate-on-scroll">
+        <h2 class="fw-bold">Industries We Serve</h2>
+        <p class="text-muted mx-auto" style="max-width:600px;">
+          Power Diagnostics provides electrical testing and diagnostic services across a wide range of industries, 
+          ensuring safe, reliable, and compliant power systems.
+        </p>
+      </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.05s;">
+          <div class="sector-card text-center p-3">
+            <i class="bi bi-tree-fill sector-icon"></i>
+            <h6 class="mt-2 mb-0">Agriculture</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.1s;">
+          <div class="sector-card text-center p-3">
+            <i class="bi bi-building sector-icon"></i>
+            <h6 class="mt-2 mb-0">Construction</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.15s;">
+          <div class="sector-card text-center p-3">
+            <i class="bi bi-hospital sector-icon"></i>
+            <h6 class="mt-2 mb-0">Healthcare</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.2s;">
+          <div class="sector-card text-center p-3">
+            <i class="bi bi-gear-fill sector-icon"></i>
+            <h6 class="mt-2 mb-0">Manufacturing</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.25s;">
+          <div class="sector-card text-center p-3">
+            <i class="bi bi-minecart sector-icon"></i>
+            <h6 class="mt-2 mb-0">Mining</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.3s;">
+          <div class="sector-card text-center p-3">
+            <i class="bi bi-droplet-fill sector-icon"></i>
+            <h6 class="mt-2 mb-0">Oil and Gas</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.35s;">
+          <div class="sector-card text-center p-3">
+            <i class="bi bi-sun-fill sector-icon"></i>
+            <h6 class="mt-2 mb-0">Renewable Energy</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.4s;">
+          <div class="sector-card text-center p-3">
+            <i class="bi bi-broadcast-pin sector-icon"></i>
+            <h6 class="mt-2 mb-0">Telecommunications</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.45s;">
+          <div class="sector-card text-center p-3">
+            <i class="bi bi-lightning-charge-fill sector-icon"></i>
+            <h6 class="mt-2 mb-0">Utilities</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.5s;">
+          <div class="sector-card text-center p-3">
+            <i class="bi bi-hdd-rack sector-icon"></i>
+            <h6 class="mt-2 mb-0">Data Centres</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.55s;">
+          <div class="sector-card text-center p-3">
+            <i class="bi bi-book-fill sector-icon"></i>
+            <h6 class="mt-2 mb-0">Education</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 animate-on-scroll" style="animation-delay: 0.6s;">
+          <div class="sector-card text-center p-3">
+            <i class="bi bi-box-seam sector-icon"></i>
+            <h6 class="mt-2 mb-0">Warehouse</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== About Section ===== -->
-  <section id="about" class="section-padding bg-light">
+  <section id="about" class="section-padding">
     <div class="container">
       <div class="row align-items-center g-5">
         <div class="col-md-6 slide-in-left">

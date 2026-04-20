@@ -23,7 +23,17 @@
     toggle: false,
   });
 
-  document.querySelectorAll("#navMenu .nav-link").forEach(function (link) {
+  // Close mobile nav when clicking nav links (except dropdown toggle)
+  document.querySelectorAll("#navMenu .nav-link:not(.dropdown-toggle)").forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (navCollapse.classList.contains("show")) {
+        bsCollapse.hide();
+      }
+    });
+  });
+
+  // Close mobile nav when clicking dropdown items
+  document.querySelectorAll("#navMenu .dropdown-item").forEach(function (link) {
     link.addEventListener("click", function () {
       if (navCollapse.classList.contains("show")) {
         bsCollapse.hide();
