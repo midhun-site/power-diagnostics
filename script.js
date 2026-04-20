@@ -107,4 +107,60 @@
       el.classList.add('animated');
     });
   }, 200);
+
+  // --- Counter animation for About section stats ---
+  function animateCounter(element, target, duration, suffix) {
+    let current = 0;
+    const increment = target / (duration / 16); // 60fps
+    const timer = setInterval(function() {
+      current += increment;
+      if (current >= target) {
+        element.textContent = target + suffix;
+        clearInterval(timer);
+      } else {
+        element.textContent = Math.floor(current) + suffix;
+      }
+    }, 16);
+  }
+
+  // Special observer for stat counters
+  const statsObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animated');
+        
+        // Find the counter element within this stat
+        const counterElement = entry.target.querySelector('.fw-bold');
+        if (counterElement && !counterElement.dataset.counted) {
+          counterElement.dataset.counted = 'true';
+          const text = counterElement.textContent.trim();
+          
+          // Parse the number and suffix
+          if (text.includes('+')) {
+            const num = parseInt(text.replace('+', ''));
+            counterElement.textContent = '0+';
+            animateCounter(counterElement, num, 1500, '+');
+          } else if (text.includes('%')) {
+            const num = parseInt(text.replace('%', ''));
+            counterElement.textContent = '0%';
+            animateCounter(counterElement, num, 1500, '%');
+          } else if (text.includes('/')) {
+            // For "24/7", just fade it in without counting
+            counterElement.style.opacity = '0';
+            setTimeout(function() {
+              counterElement.style.transition = 'opacity 0.6s ease';
+              counterElement.style.opacity = '1';
+            }, 500);
+          }
+        }
+        
+        statsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  // Observe stats in About section
+  document.querySelectorAll('.d-flex.gap-4 > div').forEach(function(stat) {
+    statsObserver.observe(stat);
+  });
 })();
