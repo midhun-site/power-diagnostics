@@ -635,6 +635,248 @@ body {
   transform: translateY(-4px) scale(1.1);
 }
 
+/* --- Rental Page Hero --- */
+.rental-hero-section {
+  min-height: 60vh;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+  color: #fff;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.rental-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></svg>');
+  background-size: 50px 50px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.rental-hero-section h1,
+.rental-hero-section p {
+  position: relative;
+  z-index: 1;
+}
+
+.rental-hero-section p {
+  opacity: 0.95;
+  line-height: 1.7;
+}
+
+/* --- Equipment Cards --- */
+.equipment-card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+  cursor: pointer;
+  height: 100%;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.equipment-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.equipment-image {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* 4:3 Aspect Ratio */
+  background: #ffffff;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.equipment-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.4s ease;
+  padding: 1rem;
+}
+
+.equipment-card:hover .equipment-image img {
+  transform: scale(1.05);
+}
+
+/* Placeholder for missing images */
+.equipment-image::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%2364748b"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg>') center / contain no-repeat;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.equipment-image img {
+  z-index: 1;
+}
+
+.equipment-label {
+  background: var(--accent);
+  color: #fff;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+
+.equipment-card:hover .equipment-label {
+  background: var(--accent-dark);
+}
+
+.equipment-label h6 {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+
+/* Equipment Description Overlay */
+.equipment-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+  color: #fff;
+  padding: 2rem 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+  z-index: 10;
+  border-radius: 1rem;
+}
+
+.equipment-card:hover .equipment-description {
+  opacity: 1;
+  visibility: visible;
+}
+
+.equipment-description h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+}
+
+.equipment-description p {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  margin: 0;
+  opacity: 0.95;
+}
+
+.equipment-description::-webkit-scrollbar {
+  width: 4px;
+}
+
+.equipment-description::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.equipment-description::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+.equipment-description::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Equipment Grid Responsive */
+@media (max-width: 1399.98px) {
+  .equipment-card {
+    min-height: 260px;
+  }
+  
+  .equipment-label {
+    padding: 0.875rem 1rem;
+    min-height: 75px;
+  }
+  
+  .equipment-label h6 {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .rental-hero-section {
+    min-height: 50vh;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+  
+  .equipment-card {
+    min-height: 240px;
+  }
+  
+  .equipment-label {
+    padding: 0.75rem 0.875rem;
+    min-height: 70px;
+  }
+  
+  .equipment-label h6 {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .rental-hero-section {
+    min-height: auto;
+    padding: 6rem 0 3rem;
+  }
+  
+  .equipment-card {
+    min-height: 220px;
+  }
+  
+  .equipment-label {
+    padding: 0.75rem;
+    min-height: 65px;
+  }
+  
+  .equipment-label h6 {
+    font-size: 0.65rem;
+    line-height: 1.4;
+  }
+}
+
 /* --- Responsive Tweaks --- */
 @media (max-width: 991.98px) {
   .hero-icon {

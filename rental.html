@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing Equipment Rental — Power Diagnostics</title>
+  <meta name="description" content="Rent high-quality electrical testing equipment from Power Diagnostics. Wide variety of branded and specialized testing equipment with up-to-date calibration.">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-lightning-charge-fill me-1"></i>Power Diagnostics
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html#hero">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="sectorsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sectors
+            </a>
+            <div class="dropdown-menu dropdown-menu-sectors p-4" aria-labelledby="sectorsDropdown">
+              <div class="row g-3">
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="index.html#sectors">Agriculture</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Aviation</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Contractors & Building</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Construction</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Data Centres</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Education</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Events</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Government</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="index.html#sectors">Healthcare</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Hospitality</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Logistics</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Manufacturing</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Mining</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Oil and Gas</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Petrochemical</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Pharmaceuticals</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="index.html#sectors">Renewable Energy</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Retail</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Shipping</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Telecommunications</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Transport</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Utilities</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Warehouse & Distribution</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Water & Wastewater</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="rental.html">Rental</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#supply">Supply</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="rental-hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center slide-in-left">
+          <h1 class="display-4 fw-bold mb-4">Testing Equipment Rental</h1>
+          <p class="lead mb-4 mx-auto" style="max-width:900px;">
+            We have a wide variety of branded and specialized electrical testing equipment to meet our customers' needs. 
+            Our fleet is maintained with up-to-date calibration, and we carry out repair and maintenance as and when needed 
+            to ensure operation with consistency and accuracy.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testing Equipments Grid Section ===== -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="text-center mb-5 animate-on-scroll">
+        <h2 class="fw-bold">Testing equipments</h2>
+        <p class="text-muted mx-auto" style="max-width:700px;">
+          Explore our various equipments available for different applications.
+        </p>
+      </div>
+
+      <!-- Equipment Grid -->
+      <div class="row g-4">
+        <!-- Equipment 1 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.05s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/meggeri-csu600a1.jpg" alt="MEGGERI CSU600A1 PRIMARY INJECTION SUPPLY UNIT 0-600A">
+            </div>
+            <div class="equipment-label">
+              <h6>MEGGER| CSU600A1 PRIMARY INJECTION SUPPLY UNIT 0-600A</h6>
+            </div>
+            <div class="equipment-description">
+              <h5>MEGGER| CSU600A1 PRIMARY INJECTION SUPPLY UNIT 0-600A</h5>
+              <p>The CSU600A is a compact and rugged current supply unit designed for accurate and easy field testing. It offers a broad application range and an excellent weight-to-performance ratio, making it suitable for turn-ratio and performance testing of current transformers, primary testing of protective relays, current testing of low and high voltage circuit breakers, and commissioning tests requiring variable currents. The CSU600AT version provides a more complete solution with a built-in timer and analogue ammeter, allowing quick current settings and reducing connection time for faster testing.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 2 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.1s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/omicron-ct-sb2.jpg" alt="OMICRON CT SB2 | CT ANALYZER SWITCH BOX">
+            </div>
+            <div class="equipment-label">
+              <h6>OMICRON CT SB2 | CT ANALYZER SWITCH BOX</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 3 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.15s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/fluke-810j.jpg" alt="FLUKE 810J VIBRATION TESTER">
+            </div>
+            <div class="equipment-label">
+              <h6>FLUKE 810J VIBRATION TESTER</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 4 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.2s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/fluke-1736.jpg" alt="FLUKE 1736 POWER LOGGER">
+            </div>
+            <div class="equipment-label">
+              <h6>FLUKE 1736 POWER LOGGER</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 5 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.25s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/sverker-780.jpg" alt="SVERKER-780">
+            </div>
+            <div class="equipment-label">
+              <h6>SVERKER-780</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 6 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.3s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/otdr-exfo-720.jpg" alt="OTDR-EXFO-720-12GB-23B">
+            </div>
+            <div class="equipment-label">
+              <h6>OTDR-EXFO-720-12GB-23B</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 7 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.35s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/fluke-117.jpg" alt="FLUKE 117 TRUE RMS DIGITAL MULTIMETER">
+            </div>
+            <div class="equipment-label">
+              <h6>FLUKE 117 TRUE RMS DIGITAL MULTIMETER</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 8 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.4s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/galvr-3000jd.jpg" alt="GALVR 3000JD 8-CHANNEL PARTICLE COUNTER">
+            </div>
+            <div class="equipment-label">
+              <h6>GALVR 3000JD 8-CHANNEL PARTICLE COUNTER</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 9 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.45s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/vanguard-trm-203.jpg" alt="VANGUARD INSTRUMENTS | TRM-203">
+            </div>
+            <div class="equipment-label">
+              <h6>VANGUARD INSTRUMENTS | TRM-203</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 10 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.5s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/hioki-lr8450.jpg" alt="HIOKI LR8450 DATA LOGGER">
+            </div>
+            <div class="equipment-label">
+              <h6>HIOKI LR8450 DATA LOGGER</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 11 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.55s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/hioki-pw4001.jpg" alt="HIOKI PW4001 PORTABLE POWER ANALYZER">
+            </div>
+            <div class="equipment-label">
+              <h6>HIOKI PW4001 PORTABLE POWER ANALYZER</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 12 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.6s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/hioki-3280-10f.jpg" alt="HIOKI 3280-10F AC CLAMP METER">
+            </div>
+            <div class="equipment-label">
+              <h6>HIOKI 3280-10F AC CLAMP METER</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 13 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.65s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/triplett-ml200.jpg" alt="TRIPLETT ML200 BATTERY POWERED MILLIOHM METER">
+            </div>
+            <div class="equipment-label">
+              <h6>TRIPLETT ML200 BATTERY POWERED MILLIOHM METER</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 14 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.7s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/triplett-m6600.jpg" alt="TRIPLETT M6600 HIGH VOLTAGE INSULATION TESTER">
+            </div>
+            <div class="equipment-label">
+              <h6>TRIPLETT M6600 HIGH VOLTAGE INSULATION TESTER</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 15 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.75s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/sf6-detector.jpg" alt="SF6 GAS LEAKAGE DETECTOR">
+            </div>
+            <div class="equipment-label">
+              <h6>SF6 GAS LEAKAGE DETECTOR</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 16 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.8s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/spx32-1750.jpg" alt="SPX32-1750-P-SX-N">
+            </div>
+            <div class="equipment-label">
+              <h6>SPX32-1750-P-SX-N</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 17 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.85s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/fluke-438.jpg" alt="FLUKE 438 - POWER QUALITY ANALYZER">
+            </div>
+            <div class="equipment-label">
+              <h6>FLUKE 438 - POWER QUALITY ANALYZER</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 18 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.9s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/fluke-1550c.jpg" alt="FLUKE 1550C- INSULATION RESISTANCE TESTER 5KV">
+            </div>
+            <div class="equipment-label">
+              <h6>FLUKE 1550C- INSULATION RESISTANCE TESTER 5KV</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 19 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 0.95s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/rigol-dp712.jpg" alt="RIGOL DP712- DC POWER SOURCE">
+            </div>
+            <div class="equipment-label">
+              <h6>RIGOL DP712- DC POWER SOURCE</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 20 -->
+        <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 1s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/freja-546.jpg" alt="FREJA -546 SECONDARY INJECTION KIT THREE PHASE">
+            </div>
+            <div class="equipment-label">
+              <h6>FREJA -546 SECONDARY INJECTION KIT THREE PHASE / FREJA -546 SECONDARY INJECTION</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 21 -->
+        <!-- <div class="col-sm-6 col-lg-4 col-xl-3 animate-on-scroll" style="animation-delay: 1.05s;">
+          <div class="equipment-card">
+            <div class="equipment-image">
+              <img src="images/equipment/doble-ezct-2000b.jpg" alt="DOBLE -EZCT 2000B | CT ANALYZER">
+            </div>
+            <div class="equipment-label">
+              <h6>DOBLE -EZCT 2000B | CT ANALYZER</h6>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact CTA Section ===== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center animate-on-scroll">
+          <h2 class="fw-bold mb-4">Need Equipment for Your Project?</h2>
+          <p class="lead text-muted mb-4">
+            Contact us today to discuss your rental requirements and get a customized quote.
+          </p>
+          <a href="index.html#contact" class="btn btn-accent btn-lg px-5">
+            Contact Us <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer-section text-center">
+    <div class="container">
+      <div class="mb-3">
+        <a href="#" class="footer-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="footer-social" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="mailto:info@power-diagnostics.com" class="footer-social" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+      <p class="mb-0 small">&copy; 2026 Power Diagnostics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle (Popper included) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
