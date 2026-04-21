@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipment & Parts Supply — Power Diagnostics</title>
+  <meta name="description" content="Comprehensive supply of electrical equipment, components, and consumables from leading manufacturers.">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-lightning-charge-fill me-1"></i>Power Diagnostics
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html#hero">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="sectorsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sectors
+            </a>
+            <div class="dropdown-menu dropdown-menu-sectors p-4" aria-labelledby="sectorsDropdown">
+              <div class="row g-3">
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="index.html#sectors">Agriculture</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Aviation</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Contractors & Building</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Construction</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Data Centres</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Education</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Events</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Government</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="index.html#sectors">Healthcare</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Hospitality</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Industrial Manufacturing</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Local Government</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Marine</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Mining</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Oil & Gas</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Petrochemical</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="index.html#sectors">Ports</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Power Generation</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Rail</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Retail</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Sports & Leisure</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Telecommunications</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Transport</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Utilities</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Warehouse & Distribution</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Water & Wastewater</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="rental.html">Rental</a></li>
+          <li class="nav-item"><a class="nav-link active" href="supply.html">Supply</a></li>
+          <li class="nav-item"><a class="nav-link" href="repair.html">Repair</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero-section d-flex align-items-center" id="hero" style="min-height: 50vh;">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-10 mx-auto text-center fade-in">
+          <h1 class="display-5 fw-bold mb-3">Equipment & Parts Supply</h1>
+          <p class="lead mb-4" style="opacity: 0.95; font-size: 1.1rem;">
+            We supply a comprehensive range of electrical equipment, components, and consumables 
+            from leading manufacturers to support your maintenance and upgrade projects.
+          </p>
+          <a href="#supply-items" class="btn btn-light btn-lg px-4">
+            Browse Catalog <i class="bi bi-arrow-down ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Supply Items Section ===== -->
+  <section id="supply-items" class="section-padding" style="background-color: #f8f9fa;">
+    <div class="container">
+      <div class="text-center mb-5 animate-on-scroll">
+        <h2 class="fw-bold mb-3">Our Product Range</h2>
+        <p class="text-muted mx-auto" style="max-width:650px;">
+          From circuit protection to control systems, we stock quality electrical components 
+          to keep your operations running smoothly and safely.
+        </p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <!-- Supply Item 1 -->
+        <div class="col-sm-6 col-md-6 col-lg-3 animate-on-scroll" style="animation-delay: 0.1s;">
+          <div class="card service-card h-100 border-0 shadow-sm text-center p-4">
+            <div class="card-body">
+              <div class="service-icon mb-3"><i class="bi bi-lightning-charge"></i></div>
+              <h5 class="card-title fw-semibold">Circuit Breakers</h5>
+              <p class="card-text text-muted small">
+                Full range of low and medium voltage circuit breakers from trusted manufacturers.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Supply Item 2 -->
+        <div class="col-sm-6 col-md-6 col-lg-3 animate-on-scroll" style="animation-delay: 0.2s;">
+          <div class="card service-card h-100 border-0 shadow-sm text-center p-4">
+            <div class="card-body">
+              <div class="service-icon mb-3"><i class="bi bi-toggle-on"></i></div>
+              <h5 class="card-title fw-semibold">Switchgear</h5>
+              <p class="card-text text-muted small">
+                Switchgear components, panels, and complete systems for industrial applications.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Supply Item 3 -->
+        <div class="col-sm-6 col-md-6 col-lg-3 animate-on-scroll" style="animation-delay: 0.3s;">
+          <div class="card service-card h-100 border-0 shadow-sm text-center p-4">
+            <div class="card-body">
+              <div class="service-icon mb-3"><i class="bi bi-power"></i></div>
+              <h5 class="card-title fw-semibold">Transformers</h5>
+              <p class="card-text text-muted small">
+                Distribution and power transformers in various ratings and configurations.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Supply Item 4 -->
+        <div class="col-sm-6 col-md-6 col-lg-3 animate-on-scroll" style="animation-delay: 0.4s;">
+          <div class="card service-card h-100 border-0 shadow-sm text-center p-4">
+            <div class="card-body">
+              <div class="service-icon mb-3"><i class="bi bi-ethernet"></i></div>
+              <h5 class="card-title fw-semibold">Cables & Wiring</h5>
+              <p class="card-text text-muted small">
+                Power cables, control cables, and wiring accessories for all voltage ratings.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Supply Item 5 -->
+        <div class="col-sm-6 col-md-6 col-lg-3 animate-on-scroll" style="animation-delay: 0.5s;">
+          <div class="card service-card h-100 border-0 shadow-sm text-center p-4">
+            <div class="card-body">
+              <div class="service-icon mb-3"><i class="bi bi-cpu"></i></div>
+              <h5 class="card-title fw-semibold">Control Systems</h5>
+              <p class="card-text text-muted small">
+                PLCs, HMIs, relays, and automation components for industrial control.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Supply Item 6 -->
+        <div class="col-sm-6 col-md-6 col-lg-3 animate-on-scroll" style="animation-delay: 0.6s;">
+          <div class="card service-card h-100 border-0 shadow-sm text-center p-4">
+            <div class="card-body">
+              <div class="service-icon mb-3"><i class="bi bi-shield-fill-check"></i></div>
+              <h5 class="card-title fw-semibold">Safety Devices</h5>
+              <p class="card-text text-muted small">
+                RCDs, MCBs, earth leakage protection, and safety monitoring equipment.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Supply Item 7 -->
+        <div class="col-sm-6 col-md-6 col-lg-3 animate-on-scroll" style="animation-delay: 0.7s;">
+          <div class="card service-card h-100 border-0 shadow-sm text-center p-4">
+            <div class="card-body">
+              <div class="service-icon mb-3"><i class="bi bi-lamp"></i></div>
+              <h5 class="card-title fw-semibold">Lighting Solutions</h5>
+              <p class="card-text text-muted small">
+                LED fixtures, emergency lighting, and industrial lighting systems.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Supply Item 8 -->
+        <div class="col-sm-6 col-md-6 col-lg-3 animate-on-scroll" style="animation-delay: 0.8s;">
+          <div class="card service-card h-100 border-0 shadow-sm text-center p-4">
+            <div class="card-body">
+              <div class="service-icon mb-3"><i class="bi bi-clipboard-check"></i></div>
+              <h5 class="card-title fw-semibold">Spare Parts</h5>
+              <p class="card-text text-muted small">
+                Genuine OEM spare parts and consumables for all major equipment brands.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Manufacturers Section ===== -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center mb-5 animate-on-scroll">
+        <h2 class="fw-bold mb-3">Trusted Manufacturers</h2>
+        <p class="text-muted mx-auto" style="max-width:650px;">
+          We partner with industry-leading manufacturers to ensure you receive genuine, 
+          high-quality products with full warranties and technical support.
+        </p>
+      </div>
+      <div class="row g-5 justify-content-center">
+        <div class="col-md-4 text-center animate-on-scroll">
+          <i class="bi bi-award-fill text-primary mb-3 d-block" style="font-size: 3rem;"></i>
+          <h5 class="fw-semibold mb-2">Quality Assured</h5>
+          <p class="text-muted small mb-0">
+            All products come with manufacturer warranties and comply with international standards.
+          </p>
+        </div>
+        <div class="col-md-4 text-center animate-on-scroll" style="animation-delay: 0.1s;">
+          <i class="bi bi-truck text-primary mb-3 d-block" style="font-size: 3rem;"></i>
+          <h5 class="fw-semibold mb-2">Fast Delivery</h5>
+          <p class="text-muted small mb-0">
+            Quick turnaround on orders with reliable logistics and tracking support.
+          </p>
+        </div>
+        <div class="col-md-4 text-center animate-on-scroll" style="animation-delay: 0.2s;">
+          <i class="bi bi-headset text-primary mb-3 d-block" style="font-size: 3rem;"></i>
+          <h5 class="fw-semibold mb-2">Technical Support</h5>
+          <p class="text-muted small mb-0">
+            Expert guidance on product selection, installation, and troubleshooting.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA Section ===== -->
+  <section class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+      <div class="text-center">
+        <a href="index.html#contact" class="btn btn-link text-decoration-none fw-semibold" style="color: #1a202c; font-size: 1.05rem;">
+          Get in Touch <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer-section text-center">
+    <div class="container">
+      <div class="mb-3">
+        <a href="#" class="footer-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="footer-social" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="mailto:admin@power-diagnostics.com" class="footer-social" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+      <p class="mb-0 small">&copy; 2026 Power Diagnostics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle (Popper included) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
