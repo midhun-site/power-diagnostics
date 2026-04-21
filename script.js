@@ -17,6 +17,38 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll(); // set initial state
 
+  // --- Highlight active menu ---
+  function highlightActiveMenu() {
+    const currentPath = window.location.pathname;
+    const currentPage = currentPath.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('#navMenu .nav-link:not(.dropdown-toggle)');
+    
+    navLinks.forEach(function(link) {
+      const href = link.getAttribute('href');
+      
+      // Remove any existing active class first
+      link.classList.remove('active');
+      
+      if (!href) return;
+      
+      // Extract just the filename from href
+      const linkFile = href.split('/').pop().split('#')[0];
+      
+      // Check for matches
+      if (linkFile === currentPage) {
+        link.classList.add('active');
+      }
+      // Special case for home page
+      else if ((currentPage === 'index.html' || currentPage === '') && 
+               (href === '#hero' || href === '#' || href === 'index.html')) {
+        link.classList.add('active');
+      }
+    });
+  }
+  
+  // Run on page load
+  highlightActiveMenu();
+
   // --- Auto-close mobile nav on link click ---
   const navCollapse = document.getElementById("navMenu");
   const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navCollapse, {
