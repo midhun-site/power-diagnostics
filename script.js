@@ -91,7 +91,7 @@
       const message = document.getElementById("message").value;
 
       // Build mailto link
-      const to = "admin@power-diagnostics.com";
+      const to = "sales@power-diagnostics.com";
       const subject = encodeURIComponent(`Contact Form Submission from ${name}`);
       const body = encodeURIComponent(
         `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
