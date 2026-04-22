@@ -167,6 +167,13 @@ body {
   transform: rotate(20deg);
 }
 
+#mainNav .navbar-brand img {
+  height: 32px;
+  width: auto;
+  /* mix-blend-mode: multiply; */
+  /* filter: brightness(0.95); */
+}
+
 #mainNav .nav-link {
   color: #334155;
   font-weight: 500;
