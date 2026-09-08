@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart | Power Diagnostics - Industrial Electrical Test Equipment</title>
+  <meta name="description"
+    content="Review selected electrical test equipment and diagnostic instruments in your inquiry cart before placing your request with Power Diagnostics.">
+
+  <!-- Favicon and Icons -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <img src="images/common/logo.png" alt="Power Diagnostics" height="40">
+      </a>
+
+      <div class="d-flex align-items-center order-lg-last ms-2">
+        <button class="nav-cart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas" title="Shopping Cart">
+          <i class="bi bi-cart3"></i>
+          <span class="nav-cart-badge">0</span>
+        </button>
+        <button class="navbar-toggler border-0 shadow-none ms-1" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html#hero">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="sectorsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Sectors
+            </a>
+            <div class="dropdown-menu dropdown-menu-sectors p-4" aria-labelledby="sectorsDropdown">
+              <div class="row g-3">
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="index.html#sectors">Agriculture</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Aviation</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Contractors & Building</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Construction</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Data Centres</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Education</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Events</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Government</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="index.html#sectors">Healthcare</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Hospitality</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Logistics</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Manufacturing</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Mining</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Oil and Gas</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Petrochemical</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Pharmaceuticals</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="index.html#sectors">Renewable Energy</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Retail</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Shipping</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Telecommunications</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Transport</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Utilities</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Warehouse & Distribution</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Water & Wastewater</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="brands.html">Brands</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="rental.html">Rental</a></li>
+          <li class="nav-item"><a class="nav-link" href="supply.html">Supply</a></li>
+          <li class="nav-item"><a class="nav-link" href="repair.html">Repair</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Cart Hero Header ===== -->
+  <section class="rental-hero-section d-flex align-items-center" style="min-height: 32vh; padding-top: 6.5rem; padding-bottom: 2.5rem;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 slide-in-left">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-2 opacity-75">
+              <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+              <li class="breadcrumb-item"><a href="products.html" class="text-white text-decoration-none">Products</a></li>
+              <li class="breadcrumb-item active text-white fw-semibold" aria-current="page">Shopping Cart</li>
+            </ol>
+          </nav>
+          <h1 class="display-6 fw-bold mb-0 text-white">Your Equipment Cart</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Cart Main Section ===== -->
+  <section class="section-padding bg-light py-5">
+    <div class="container">
+
+      <!-- Progress Stepper Bar -->
+      <div class="cart-progress-bar">
+        <div class="cart-progress-step active">
+          <span class="cart-step-circle">1</span>
+          <span>Shopping Cart</span>
+        </div>
+        <div class="text-muted"><i class="bi bi-chevron-right"></i></div>
+        <div class="cart-progress-step">
+          <span class="cart-step-circle">2</span>
+          <span>Review & Details</span>
+        </div>
+        <div class="text-muted"><i class="bi bi-chevron-right"></i></div>
+        <div class="cart-progress-step">
+          <span class="cart-step-circle">3</span>
+          <span>Enquiry Confirmation</span>
+        </div>
+      </div>
+      
+      <!-- Cart Table & Actions Wrapper -->
+      <div id="cartPageContent">
+        <div class="row g-4">
+          
+          <!-- Left Column: Cart Items Table -->
+          <div class="col-lg-8">
+            <div class="cart-table-card mb-4">
+              <div class="table-responsive">
+                <table class="cart-table align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th style="width: 50px;"></th>
+                      <th>PRODUCT & SPECIFICATIONS</th>
+                      <th class="text-end">QUANTITY</th>
+                    </tr>
+                  </thead>
+                  <tbody id="cartPageTableBody">
+                    <!-- Dynamically populated by script.js from localStorage -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Value / Trust Information Badges -->
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="trust-info-card">
+                  <div class="trust-info-icon"><i class="bi bi-headset"></i></div>
+                  <div>
+                    <h6 class="trust-info-title">Need Technical Advice?</h6>
+                    <p class="trust-info-text">Our diagnostic engineers are on standby. <a href="tel:+971501886773" class="text-accent text-decoration-none fw-semibold">Call Support</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="trust-info-card">
+                  <div class="trust-info-icon"><i class="bi bi-shield-check"></i></div>
+                  <div>
+                    <h6 class="trust-info-title">Certified Calibration</h6>
+                    <p class="trust-info-text">All equipment tested and verified to international safety standards.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="trust-info-card">
+                  <div class="trust-info-icon"><i class="bi bi-lightning-charge"></i></div>
+                  <div>
+                    <h6 class="trust-info-title">Fast Quotation</h6>
+                    <p class="trust-info-text">Guaranteed response within 2-4 business hours across UAE & GCC.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Enquiry Summary Card -->
+          <div class="col-lg-4">
+            <div class="cart-summary-card">
+              <h5 class="cart-summary-title">Enquiry Summary</h5>
+              
+              <div class="cart-summary-row">
+                <span>Total Units Selected:</span>
+                <strong id="summaryTotalItems">0</strong>
+              </div>
+
+              <div class="cart-summary-row">
+                <span>Distinct Models:</span>
+                <span id="summaryItemCount" class="text-muted">0 items</span>
+              </div>
+
+              <div class="cart-summary-row">
+                <span>Estimated Response Time:</span>
+                <span class="badge bg-light text-primary border">&lt; 4 Hours</span>
+              </div>
+
+              <div class="cart-summary-badge">
+                <i class="bi bi-info-circle-fill me-1"></i> Submitting an enquiry creates an official quotation request. No immediate payment is required.
+              </div>
+
+              <div class="d-grid gap-2">
+                <a href="checkout.html" class="btn btn-accent-gradient btn-lg py-3 shadow-sm">
+                  Proceed to Checkout <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+                <a href="#" id="cartWhatsAppQuoteBtn" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp py-2 fw-semibold">
+                  <i class="bi bi-whatsapp me-2"></i> Quick Quote via WhatsApp
+                </a>
+                <a href="products.html" class="btn btn-outline-secondary btn-sm py-2">
+                  <i class="bi bi-arrow-left me-1"></i> Continue Browsing Products
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Empty Cart State -->
+      <div id="cartPageEmptyState" class="text-center py-5 d-none bg-white rounded-4 border p-5 shadow-sm my-4">
+        <div class="mb-3">
+          <i class="bi bi-cart-x text-muted" style="font-size: 4.5rem;"></i>
+        </div>
+        <h3 class="fw-bold mb-2">Your Cart is Currently Empty</h3>
+        <p class="text-muted mb-4" style="max-width: 500px; margin: 0 auto;">You have not added any diagnostic tools, testers, or equipment to your enquiry list yet.</p>
+        <a href="products.html" class="btn btn-accent-gradient btn-lg px-5">
+          <i class="bi bi-grid me-2"></i> Explore Equipment Catalog
+        </a>
+      </div>
+
+      <!-- Recommendation Section: You May Be Interested In... -->
+      <div class="mt-5 pt-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+          <div>
+            <h4 class="fw-bold mb-1">Recommended Equipment</h4>
+            <p class="text-muted small mb-0">Frequently paired diagnostics and calibration tools</p>
+          </div>
+          <a href="products.html" class="btn btn-sm btn-outline-primary rounded-pill px-3">
+            View All Products <i class="bi bi-chevron-right ms-1"></i>
+          </a>
+        </div>
+
+        <div class="row g-3">
+          
+          <!-- Recommendation 1: Fluke 117 -->
+          <div class="col-sm-6 col-md-4 col-xl-3">
+            <div class="shop-card">
+              <div class="shop-card-img-wrap">
+                <img src="images/equipment/fluke-117.jpg" alt="Fluke 117">
+              </div>
+              <div class="shop-card-body">
+                <div class="shop-card-category">Digital Multimeters</div>
+                <h6 class="shop-card-title">Fluke 117 True RMS Multimeter</h6>
+                <div class="shop-card-brand">Fluke</div>
+                <button type="button" class="btn-add-to-cart" data-id="fluke-117" data-name="Fluke 117 True RMS Multimeter" data-brand="Fluke" data-category="Multimeter" data-image="images/equipment/fluke-117.jpg">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recommendation 2: Megger CSU600A1 -->
+          <div class="col-sm-6 col-md-4 col-xl-3">
+            <div class="shop-card">
+              <div class="shop-card-img-wrap">
+                <img src="images/equipment/meggeri-csu600a1.jpg" alt="Megger CSU600A1">
+              </div>
+              <div class="shop-card-body">
+                <div class="shop-card-category">Primary Injection Sets</div>
+                <h6 class="shop-card-title">Megger CSU600A1 Current Supply</h6>
+                <div class="shop-card-brand">Megger</div>
+                <button type="button" class="btn-add-to-cart" data-id="megger-csu600a1" data-name="Megger CSU600A1 Current Supply" data-brand="Megger" data-category="Injection" data-image="images/equipment/meggeri-csu600a1.jpg">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recommendation 3: Hioki PW4001 -->
+          <div class="col-sm-6 col-md-4 col-xl-3">
+            <div class="shop-card">
+              <div class="shop-card-img-wrap">
+                <img src="images/equipment/hioki-pw4001.jpg" alt="Hioki PW4001">
+              </div>
+              <div class="shop-card-body">
+                <div class="shop-card-category">Precision Power Analyzers</div>
+                <h6 class="shop-card-title">Hioki PW4001 Power Analyzer</h6>
+                <div class="shop-card-brand">Hioki</div>
+                <button type="button" class="btn-add-to-cart" data-id="hioki-pw4001" data-name="Hioki PW4001 Power Analyzer" data-brand="Hioki" data-category="Power Quality" data-image="images/equipment/hioki-pw4001.jpg">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recommendation 4: OMICRON CT SB2 -->
+          <div class="col-sm-6 col-md-4 col-xl-3">
+            <div class="shop-card">
+              <div class="shop-card-img-wrap">
+                <img src="images/equipment/omicron-ct-sb2.jpg" alt="OMICRON CT SB2">
+              </div>
+              <div class="shop-card-body">
+                <div class="shop-card-category">Transformer Diagnostics</div>
+                <h6 class="shop-card-title">OMICRON CT SB2 Switch Box</h6>
+                <div class="shop-card-brand">OMICRON</div>
+                <button type="button" class="btn-add-to-cart" data-id="omicron-ct-sb2" data-name="OMICRON CT SB2 Switch Box" data-brand="OMICRON" data-category="Diagnostic" data-image="images/equipment/omicron-ct-sb2.jpg">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Offcanvas Shopping Cart Drawer ===== -->
+  <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="cartOffcanvasLabel"><i class="bi bi-cart3"></i> Shopping Cart</h5>
+      <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-3 p-md-4 d-flex flex-column">
+      <div id="cartDrawerItemsList" class="flex-grow-1 overflow-auto">
+        <!-- Injected dynamically by script.js -->
+      </div>
+      <div id="cartDrawerEmpty" class="text-center py-5 d-none">
+        <i class="bi bi-cart-x text-muted mb-3" style="font-size: 2.75rem;"></i>
+        <h6 class="fw-bold text-dark">Your cart is empty</h6>
+        <p class="text-muted small mb-3">Browse our test equipment and click Add to Cart.</p>
+        <button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3" data-bs-dismiss="offcanvas">Continue Browsing</button>
+      </div>
+    </div>
+    <div class="cart-drawer-footer" id="cartDrawerFooter">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted small fw-semibold">Total Selected:</span>
+        <span class="fw-bold text-dark" id="drawerTotalUnits">0 Units</span>
+      </div>
+      <div class="d-grid gap-2">
+        <a href="checkout.html" class="btn btn-accent-gradient">Proceed to Checkout <i class="bi bi-arrow-right ms-1"></i></a>
+        <a href="cart.html" class="btn btn-outline-primary">View Cart Details</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer-section text-center">
+    <div class="container">
+      <div class="mb-3">
+        <a href="#" class="footer-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="footer-social" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="mailto:sales@power-diagnostics.com" class="footer-social" aria-label="Email"><i
+            class="bi bi-envelope-fill"></i></a>
+      </div>
+      <p class="mb-0 small">&copy; 2026 Power Diagnostics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle (Popper included) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>

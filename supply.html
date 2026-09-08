@@ -52,10 +52,16 @@
             <a class="navbar-brand fw-bold" href="index.html">
                 <img src="images/common/logo.png" alt="Power Diagnostics" height="40">
             </a>
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center order-lg-last ms-2">
+                <button class="nav-cart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas" title="Shopping Cart">
+                    <i class="bi bi-cart3"></i>
+                    <span class="nav-cart-badge">0</span>
+                </button>
+                <button class="navbar-toggler border-0 shadow-none ms-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto gap-lg-1">
                     <li class="nav-item"><a class="nav-link" href="index.html#hero">Home</a></li>
@@ -113,6 +119,8 @@
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="brands.html">Brands</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="rental.html">Rental</a></li>
                     <li class="nav-item"><a class="nav-link" href="supply.html">Supply</a></li>
                     <li class="nav-item"><a class="nav-link" href="repair.html">Repair</a></li>
@@ -367,6 +375,35 @@
             </div>
         </div>
     </section>
+
+    <!-- ===== Offcanvas Shopping Cart Drawer ===== -->
+    <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="cartOffcanvasLabel"><i class="bi bi-cart3"></i> Shopping Cart</h5>
+            <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-3 p-md-4 d-flex flex-column">
+            <div id="cartDrawerItemsList" class="flex-grow-1 overflow-auto">
+                <!-- Injected dynamically by script.js -->
+            </div>
+            <div id="cartDrawerEmpty" class="text-center py-5 d-none">
+                <i class="bi bi-cart-x text-muted mb-3" style="font-size: 2.75rem;"></i>
+                <h6 class="fw-bold text-dark">Your cart is empty</h6>
+                <p class="text-muted small mb-3">Browse our test equipment and click Add to Cart.</p>
+                <button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3" data-bs-dismiss="offcanvas">Continue Browsing</button>
+            </div>
+        </div>
+        <div class="cart-drawer-footer" id="cartDrawerFooter">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted small fw-semibold">Total Selected:</span>
+                <span class="fw-bold text-dark" id="drawerTotalUnits">0 Units</span>
+            </div>
+            <div class="d-grid gap-2">
+                <a href="checkout.html" class="btn btn-accent-gradient">Proceed to Checkout <i class="bi bi-arrow-right ms-1"></i></a>
+                <a href="cart.html" class="btn btn-outline-primary">View Cart Details</a>
+            </div>
+        </div>
+    </div>
 
     <!-- ===== Footer ===== -->
     <footer class="footer-section text-center">

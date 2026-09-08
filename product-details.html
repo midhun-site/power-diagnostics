@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Product Details | Power Diagnostics - Industrial Electrical Test Equipment</title>
+  <meta name="description" id="pageMetaDesc"
+    content="Detailed specifications, features, datasheets, and quotation requests for industrial electrical testing and diagnostic equipment.">
+
+  <!-- Favicon and Icons -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <img src="images/common/logo.png" alt="Power Diagnostics" height="40">
+      </a>
+
+      <div class="d-flex align-items-center order-lg-last ms-2">
+        <button class="nav-cart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas" title="Shopping Cart">
+          <i class="bi bi-cart3"></i>
+          <span class="nav-cart-badge">0</span>
+        </button>
+        <button class="navbar-toggler border-0 shadow-none ms-1" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html#hero">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="sectorsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Sectors
+            </a>
+            <div class="dropdown-menu dropdown-menu-sectors p-4" aria-labelledby="sectorsDropdown">
+              <div class="row g-3">
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="index.html#sectors">Agriculture</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Aviation</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Contractors & Building</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Construction</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Data Centres</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Education</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Events</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Government</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="index.html#sectors">Healthcare</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Hospitality</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Logistics</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Manufacturing</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Mining</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Oil and Gas</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Petrochemical</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Pharmaceuticals</a></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled mb-0">
+                    <li><a class="dropdown-item" href="index.html#sectors">Renewable Energy</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Retail</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Shipping</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Telecommunications</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Transport</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Utilities</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Warehouse & Distribution</a></li>
+                    <li><a class="dropdown-item" href="index.html#sectors">Water & Wastewater</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="brands.html">Brands</a></li>
+          <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="rental.html">Rental</a></li>
+          <li class="nav-item"><a class="nav-link" href="supply.html">Supply</a></li>
+          <li class="nav-item"><a class="nav-link" href="repair.html">Repair</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Breadcrumbs & Top Bar ===== -->
+  <section class="rental-hero-section d-flex align-items-center" style="min-height: 22vh; padding-top: 5.5rem; padding-bottom: 2rem;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-2 opacity-90">
+              <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+              <li class="breadcrumb-item"><a href="products.html" class="text-white text-decoration-none">Products</a></li>
+              <li class="breadcrumb-item active text-white fw-bold" id="pdBreadcrumbCategory" aria-current="page">Clamp Meters</li>
+            </ol>
+          </nav>
+          <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+            <h1 class="h3 fw-bold text-white mb-0" id="pdBannerTitle">AC Clamp Meter 3280-10F</h1>
+            <a href="products.html" class="btn btn-sm btn-outline-light rounded-pill px-3">
+              <i class="bi bi-arrow-left me-1"></i> Back to Catalog
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Product Detail Main Section ===== -->
+  <section class="section-padding bg-light py-5">
+    <div class="container">
+      
+      <!-- Top Card: Gallery + Product Info -->
+      <div class="card border-0 rounded-4 shadow-sm p-4 p-lg-5 mb-5 bg-white">
+        <div class="row g-4 g-lg-5 align-items-start">
+
+          <!-- Left Column: Image Showcase & Gallery Thumbnails -->
+          <div class="col-lg-5">
+            <div class="pd-gallery-wrapper">
+              <!-- Main Active Image -->
+              <div class="pd-main-img-card mb-3">
+                <span class="pd-badge-floating">Certified Authentic</span>
+                <img id="pdMainImage" src="images/equipment/hioki-3280-10f.jpg" alt="AC Clamp Meter 3280-10F" class="img-fluid pd-main-img">
+              </div>
+
+              <!-- Thumbnail Gallery Switcher -->
+              <div class="pd-thumb-list" id="pdThumbList">
+                <div class="pd-thumb-item active" data-img="images/equipment/hioki-3280-10f.jpg">
+                  <img src="images/equipment/hioki-3280-10f.jpg" alt="Front View">
+                </div>
+                <div class="pd-thumb-item" data-img="images/equipment/ac-and-dc-clamp-meters_1.jpg">
+                  <img src="images/equipment/ac-and-dc-clamp-meters_1.jpg" alt="Clamp Sensor View">
+                </div>
+                <div class="pd-thumb-item" data-img="images/equipment/digital-multimeters_3.jpg">
+                  <img src="images/equipment/digital-multimeters_3.jpg" alt="Case & Accessories">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Product Specifications & Actions -->
+          <div class="col-lg-7">
+            <div class="pd-info-wrapper ps-lg-3">
+              
+              <!-- Brand & Category Meta Badges -->
+              <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
+                <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 fw-bold" id="pdBrandBadge" style="letter-spacing: 0.5px;">HIOKI</span>
+                <span class="badge bg-light text-muted border px-3 py-2" id="pdCategoryBadge">Electrical / Clamp Meters</span>
+                <span class="badge bg-success-subtle text-success border border-success-subtle ms-sm-auto">
+                  <i class="bi bi-check-circle-fill me-1"></i> In Stock & Ready
+                </span>
+              </div>
+
+              <!-- Product Title -->
+              <h2 class="h2 fw-bold text-dark mb-2" id="pdTitle">AC Clamp Meter 3280-10F</h2>
+              
+              <!-- Model Code -->
+              <div class="pd-model-code text-muted mb-3" id="pdModel">
+                MODEL: <strong class="text-dark" id="pdModelVal">CM3280-10F</strong>
+              </div>
+
+              <!-- Short Highlights Description -->
+              <p class="text-secondary lead mb-4" id="pdShortDesc" style="font-size: 1.05rem; line-height: 1.6;">
+                Rugged & Compact, Essential Equipment for Professional Electricians: Measure Current and Voltage with a Single Instrument.
+              </p>
+
+              <!-- Calibration & Service Guarantees -->
+              <div class="pd-guarantee-bar bg-light p-3 rounded-3 mb-4 border d-flex align-items-center justify-content-between flex-wrap gap-2">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-shield-check text-primary fs-4"></i>
+                  <div>
+                    <div class="fw-bold small text-dark">NIST Traceable Calibration</div>
+                    <div class="text-muted" style="font-size: 0.775rem;">Pre-calibrated with official certificate</div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-truck text-success fs-4"></i>
+                  <div>
+                    <div class="fw-bold small text-dark">Express GCC Delivery</div>
+                    <div class="text-muted" style="font-size: 0.775rem;">UAE & Gulf dispatch in 24-48h</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quantity Selection & Primary CTAs -->
+              <div class="pd-action-box p-3 rounded-4 bg-light border mb-4">
+                <div class="row g-3 align-items-center">
+                  <div class="col-sm-4">
+                    <label class="form-label small fw-bold text-dark mb-1">Quantity (Units):</label>
+                    <div class="qty-stepper w-100 justify-content-between bg-white shadow-sm">
+                      <button type="button" class="qty-btn" id="pdQtyMinus">-</button>
+                      <input type="text" class="qty-display" id="pdQtyInput" value="1" readonly>
+                      <button type="button" class="qty-btn" id="pdQtyPlus">+</button>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <label class="form-label small fw-bold text-dark mb-1">Commercial Actions:</label>
+                    <div class="d-flex gap-2">
+                      <button type="button" class="btn btn-accent-gradient flex-fill py-2 fw-bold shadow-sm" id="pdAddToCartBtn">
+                        <i class="bi bi-cart-plus me-1"></i> Add to Cart
+                      </button>
+                      <a href="#" id="pdWhatsAppBtn" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp flex-fill py-2 fw-bold shadow-sm">
+                        <i class="bi bi-whatsapp me-1"></i> Quick WhatsApp
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Secondary CTAs: Direct Checkout -->
+              <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 pt-2">
+                <a href="checkout.html" class="btn btn-outline-dark px-4 py-2 fw-semibold" id="pdDirectEnquiryBtn">
+                  <i class="bi bi-send-check me-1"></i> Proceed to Official Quotation Checkout
+                </a>
+                <div class="text-muted small">
+                  <i class="bi bi-headset me-1 text-primary"></i> Need custom specs? <a href="tel:+971501886773" class="text-accent fw-bold text-decoration-none">+971 50 188 6773</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===== Detailed Information Tabs Section ===== -->
+      <div class="card border-0 rounded-4 shadow-sm p-4 p-lg-5 mb-5 bg-white">
+        
+        <!-- Tab Navigation Pills -->
+        <ul class="nav nav-pills pd-tab-nav mb-4 gap-2" id="productTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="desc-tab" data-bs-toggle="pill" data-bs-target="#tab-description" type="button" role="tab" aria-selected="true">
+              <i class="bi bi-file-text me-1"></i> Description
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="features-tab" data-bs-toggle="pill" data-bs-target="#tab-features" type="button" role="tab" aria-selected="false">
+              <i class="bi bi-stars me-1"></i> Features
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="specs-tab" data-bs-toggle="pill" data-bs-target="#tab-specs" type="button" role="tab" aria-selected="false">
+              <i class="bi bi-sliders me-1"></i> Specifications
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="downloads-tab" data-bs-toggle="pill" data-bs-target="#tab-downloads" type="button" role="tab" aria-selected="false">
+              <i class="bi bi-download me-1"></i> Downloads
+            </button>
+          </li>
+        </ul>
+
+        <!-- Tab Content Panes -->
+        <div class="tab-content" id="productTabContent">
+          
+          <!-- TAB 1: Description -->
+          <div class="tab-pane fade show active" id="tab-description" role="tabpanel" aria-labelledby="desc-tab">
+            <div class="pd-tab-pane-content">
+              <h5 class="fw-bold text-dark mb-3">Product Overview & Capabilities</h5>
+              <p class="text-secondary mb-4 leading-relaxed" id="pdLongDescription" style="font-size: 1.02rem; line-height: 1.8;">
+                The 3280-10F is an average rectifying 1000A AC clamp meter that features a broad operating temperature range of -25°C to 65°C, thin and compact clamp core and optional flexible current sensor that you can attach to let you get into the tightest spots.
+              </p>
+              
+              <div class="row g-3 mt-2" id="pdOverviewCards">
+                <div class="col-md-4">
+                  <div class="p-3 rounded-3 bg-light border text-center">
+                    <i class="bi bi-thermometer-half text-danger fs-2 mb-2 d-block"></i>
+                    <h6 class="fw-bold mb-1" id="pdCardVal1">-25°C to 65°C</h6>
+                    <small class="text-muted" id="pdCardLabel1">Operating Temperature</small>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 rounded-3 bg-light border text-center">
+                    <i class="bi bi-lightning-charge-fill text-warning fs-2 mb-2 d-block"></i>
+                    <h6 class="fw-bold mb-1" id="pdCardVal2">1000A AC Range</h6>
+                    <small class="text-muted" id="pdCardLabel2">Current Measurement</small>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 rounded-3 bg-light border text-center">
+                    <i class="bi bi-shield-fill-check text-primary fs-2 mb-2 d-block"></i>
+                    <h6 class="fw-bold mb-1" id="pdCardVal3">1-Meter Drop-Proof</h6>
+                    <small class="text-muted" id="pdCardLabel3">Field Ruggedness</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: Features -->
+          <div class="tab-pane fade" id="tab-features" role="tabpanel" aria-labelledby="features-tab">
+            <div class="pd-tab-pane-content">
+              <h5 class="fw-bold text-dark mb-3">Key Technical Features</h5>
+              <ul class="list-unstyled pd-features-list mb-0" id="pdFeaturesList">
+                <li class="pd-feature-item">
+                  <i class="bi bi-star-fill text-success me-2"></i>
+                  <span>A pocket clamp meter that can use flexible sensors</span>
+                </li>
+                <li class="pd-feature-item">
+                  <i class="bi bi-star-fill text-success me-2"></i>
+                  <span>Essential for electrical work: A thin card tester that fits in the pocket with all the capabilities of a clamp meter</span>
+                </li>
+                <li class="pd-feature-item">
+                  <i class="bi bi-star-fill text-success me-2"></i>
+                  <span>A tough, pocket-size clamp meter with an operating temperature range of -25°C to 65°C</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- TAB 3: Specifications -->
+          <div class="tab-pane fade" id="tab-specs" role="tabpanel" aria-labelledby="specs-tab">
+            <div class="pd-tab-pane-content">
+              <h5 class="fw-bold text-dark mb-3">Technical Specifications Table</h5>
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped pd-spec-table align-middle">
+                  <tbody id="pdSpecsTableBody">
+                    <tr>
+                      <th style="width: 25%;">AC Current range</th>
+                      <td>41.99 to 1000 A, 3 ranges (50 Hz to 60 Hz, Average rectified), Basic accuracy: ±1.5 % rdg. ±5 dgt.</td>
+                    </tr>
+                    <tr>
+                      <th>DC Voltage range</th>
+                      <td>419.9 mV to 600 V, 5 ranges, Basic accuracy: ±1.0 % rdg. ±3 dgt.</td>
+                    </tr>
+                    <tr>
+                      <th>AC Voltage range</th>
+                      <td>4.199 V to 600 V, 4 ranges (45 to 500 Hz, Average rectified), Basic accuracy: ±1.8 % rdg. ±7 dgt.</td>
+                    </tr>
+                    <tr>
+                      <th>Crest factor</th>
+                      <td>N/A</td>
+                    </tr>
+                    <tr>
+                      <th>Resistance range</th>
+                      <td>419.9 Ω to 41.99 MΩ, 6 ranges, Basic accuracy: ±2 % rdg. ±4 dgt.</td>
+                    </tr>
+                    <tr>
+                      <th>Other functions</th>
+                      <td>Continuity: Buzzer sounds at 50 Ω ±40 Ω or less, Data hold, Auto power save, Drop-proof from height of 1 meter</td>
+                    </tr>
+                    <tr>
+                      <th>Display</th>
+                      <td>LCD, max. 4199 dgt., Display refresh rate: 400 ms</td>
+                    </tr>
+                    <tr>
+                      <th>Environmental protection</th>
+                      <td>IP40 dustproof and waterproof (while in storage)</td>
+                    </tr>
+                    <tr>
+                      <th>Power supply</th>
+                      <td>Coin type lithium battery (CR2032) &times;1, Continuous use 120 hours</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 4: Downloads -->
+          <div class="tab-pane fade" id="tab-downloads" role="tabpanel" aria-labelledby="downloads-tab">
+            <div class="pd-tab-pane-content">
+              <h5 class="fw-bold text-dark mb-3">Documentation & Resources</h5>
+              <div class="row g-3" id="pdDownloadsContainer">
+                <div class="col-md-6 col-lg-4">
+                  <div class="card p-3 border rounded-3 bg-light h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <div class="p-2 bg-dark text-white rounded-3">
+                        <i class="bi bi-file-earmark-pdf fs-4"></i>
+                      </div>
+                      <div>
+                        <h6 class="fw-bold mb-0 text-dark">Technical Datasheet</h6>
+                        <small class="text-muted">PDF • 2.4 MB</small>
+                      </div>
+                    </div>
+                    <a href="images/equipment/hioki-3280-10f.jpg" download class="btn btn-dark btn-sm w-100 fw-bold mt-auto">
+                      <i class="bi bi-download me-1"></i> DATA SHEET
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card p-3 border rounded-3 bg-light h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <div class="p-2 bg-primary text-white rounded-3">
+                        <i class="bi bi-book fs-4"></i>
+                      </div>
+                      <div>
+                        <h6 class="fw-bold mb-0 text-dark">User Manual & Guides</h6>
+                        <small class="text-muted">PDF • 4.1 MB</small>
+                      </div>
+                    </div>
+                    <a href="images/equipment/hioki-3280-10f.jpg" download class="btn btn-outline-primary btn-sm w-100 fw-bold mt-auto">
+                      <i class="bi bi-file-earmark-arrow-down me-1"></i> USER MANUAL
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card p-3 border rounded-3 bg-light h-100">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <div class="p-2 bg-success text-white rounded-3">
+                        <i class="bi bi-award fs-4"></i>
+                      </div>
+                      <div>
+                        <h6 class="fw-bold mb-0 text-dark">Calibration Certificate Spec</h6>
+                        <small class="text-muted">PDF • 1.2 MB</small>
+                      </div>
+                    </div>
+                    <a href="images/equipment/hioki-3280-10f.jpg" download class="btn btn-outline-success btn-sm w-100 fw-bold mt-auto">
+                      <i class="bi bi-shield-check me-1"></i> CERTIFICATE SPEC
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===== Related Products Section ===== -->
+      <div class="mt-5 pt-3">
+        <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+          <div>
+            <h3 class="fw-bold text-dark mb-1">Related Products</h3>
+            <p class="text-muted small mb-0">Engineers exploring this diagnostic tool also evaluated these certified instruments.</p>
+          </div>
+          <a href="products.html" class="btn btn-outline-primary btn-sm rounded-pill px-4">
+            View All Catalog <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+
+        <div class="row g-3" id="pdRelatedGrid">
+          <!-- Dynamically populated by script.js -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer-section text-center">
+    <div class="container">
+      <div class="mb-3">
+        <a href="#" class="footer-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="footer-social" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="mailto:sales@power-diagnostics.com" class="footer-social" aria-label="Email"><i
+            class="bi bi-envelope-fill"></i></a>
+      </div>
+      <p class="mb-0 small">&copy; 2026 Power Diagnostics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== Offcanvas Shopping Cart Drawer ===== -->
+  <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="cartOffcanvasLabel"><i class="bi bi-cart3"></i> Shopping Cart</h5>
+      <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-3 p-md-4 d-flex flex-column">
+      <div id="cartDrawerItemsList" class="flex-grow-1 overflow-auto">
+        <!-- Injected dynamically by script.js -->
+      </div>
+      <div id="cartDrawerEmpty" class="text-center py-5 d-none">
+        <i class="bi bi-cart-x text-muted mb-3" style="font-size: 2.75rem;"></i>
+        <h6 class="fw-bold text-dark">Your cart is empty</h6>
+        <p class="text-muted small mb-3">Browse our test equipment and click Add to Cart.</p>
+        <button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3" data-bs-dismiss="offcanvas">Continue Browsing</button>
+      </div>
+    </div>
+    <div class="cart-drawer-footer" id="cartDrawerFooter">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted small fw-semibold">Total Selected:</span>
+        <span class="fw-bold text-dark" id="drawerTotalUnits">0 Units</span>
+      </div>
+      <div class="d-grid gap-2">
+        <a href="checkout.html" class="btn btn-accent-gradient">Proceed to Checkout <i class="bi bi-arrow-right ms-1"></i></a>
+        <a href="cart.html" class="btn btn-outline-primary">View Cart Details</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
